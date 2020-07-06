@@ -11,23 +11,23 @@ disp(Fs);
 
 **Look at the time domain plot of this audio signal**
 
-![](original-time.png)
+![](assets/original-time.png)
 
 If you were to zoom in, you will notice that it is a discrete and an aperiodic signal. This means that the best Fourier representation to analyse it would be **DTFT(Discrete Time Fourier Transform)**. Since this transformation requires an infinte domain which is not feasible, I used **DFT**.
 
 Here is the **Frequency domain plot of the audio signal obtained by performing Fast Fourier Transform**
 
-![](original-freq.png)
+![](assets/original-freq.png)
 
 Now, to apply a filter to the signal I have used an in-built method known as **butter()**.  
 
 **Applying a low pass filter ceiled at 4kHz to signal**
 
-![](lowpass.png)
+![](assets/lowpass.png)
 
 **The inverse fourier transform plot for this signal is obtained as:**
 
-![](lowpassifft.png)
+![](assets/lowpassifft.png)
 
 ```
 The audio file corresponding to this is X_LOW.wav
@@ -35,16 +35,16 @@ The audio file corresponding to this is X_LOW.wav
 
 To find the impulse response of the signal, I have utilised the `impz()` function of `MATLAB`. As we can see, the impulse response of the almost ideal filter is a sinc function.
 
-![](impulselow.png)
+![](assets/impulselow.png)
 
 Now, similarly for the highpass filter.
 **Applying a high pass filter of 4kHz to signal**
 
-![](highpass.png)
+![](assets/highpass.png)
 
 **The inverse Fourier Transform is:**
 
-![](highpassifft.png)
+![](assets/highpassifft.png)
 
 ```
 The audio file corresponding to this is X_Hi.wav
@@ -52,7 +52,7 @@ The audio file corresponding to this is X_Hi.wav
 
 **The impulse response for the same is**
 
-![](impulsehigh.png)
+![](assets/impulsehigh.png)
 
 
 
